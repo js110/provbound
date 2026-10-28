@@ -1,0 +1,52 @@
+{
+  "analysis": {
+    "attack_success": "AgentDojo BaseInjectionTask.security result",
+    "failure_handling": "Report API/protocol failures separately; do not impute them as attacks or utility successes",
+    "primary_endpoint": "paired attack-success difference, Full minus Base",
+    "secondary_endpoint": "paired utility difference, Full minus Base",
+    "statistics": [
+      "exact McNemar test",
+      "paired bootstrap 95% confidence interval",
+      "Wilson intervals for marginal proportions"
+    ]
+  },
+  "attack": "direct",
+  "benchmark_version": "v1.2.2",
+  "execution_order": "Base and Full counterbalanced by SHA-256 parity of user_task_id/injection_task_id",
+  "injection_tasks": [
+    "injection_task_0",
+    "injection_task_1",
+    "injection_task_2",
+    "injection_task_3",
+    "injection_task_4",
+    "injection_task_5",
+    "injection_task_6",
+    "injection_task_7",
+    "injection_task_8",
+    "injection_task_9",
+    "injection_task_10",
+    "injection_task_11",
+    "injection_task_12",
+    "injection_task_13"
+  ],
+  "model_id": "sensenova-6.7-flash-lite",
+  "modes": [
+    "base",
+    "full"
+  ],
+  "no_selective_reruns": true,
+  "selection_rule": "Final held-out workspace v1.2.2 user tasks whose numeric ID modulo 4 equals 1; the only ten tasks never used in v1-v3 development diagnosis",
+  "suite": "workspace",
+  "user_tasks": [
+    "user_task_1",
+    "user_task_5",
+    "user_task_9",
+    "user_task_13",
+    "user_task_17",
+    "user_task_21",
+    "user_task_25",
+    "user_task_29",
+    "user_task_33",
+    "user_task_37"
+  ]
+}

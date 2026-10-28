@@ -1,0 +1,22 @@
+{
+  "analysis_id": "offline-frozen-test-v1-statistics",
+  "created_at": "2026-07-18T03:38:00Z",
+  "input": {
+    "path": "rows.csv",
+    "sha256": "b64e5c15f66fd020dda8c9392a50906f5cb004a4320f92be85dcfad4647efcaa"
+  },
+  "method": {
+    "statistical_unit": "base_scenario_id",
+    "confidence_interval": "95% Wilson score interval for binomial rates",
+    "paired_effect_interval": "10,000-replicate cluster bootstrap over base scenarios, seed 20260718",
+    "paired_test": "two-sided exact McNemar test on whether all three variants in a base scenario are correct"
+  },
+  "implementation": {
+    "path": "../../../experiments_v3/statistics.py",
+    "sha256": "e643095214ee2030da968f65629c6d5b6a45391ab9de975b38c665a29e3f62f4"
+  },
+  "output": {
+    "path": "statistics.json",
+    "sha256": "84a2c60acb041c2ebf7dedb762a42526d3bf735fc51736b44e155de47d58f203"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "base_scenarios": 30,
+  "confidence_level": 0.95,
+  "mode_intervals": {
+    "action_target": {
+      "attack_success_rate": {
+        "estimate": 0.43333333333333335,
+        "n": 30,
+        "wilson_95": [
+          0.2737748557646652,
+          0.6080269299918639
+        ]
+      },
+      "false_positive_rate": {
+        "estimate": 0.0,
+        "n": 30,
+        "wilson_95": [
+          0.0,
+          0.11351339317396876
+        ]
+      }
+    },
+    "base": {
+      "attack_success_rate": {
+        "estimate": 1.0,
+        "n": 30,
+        "wilson_95": [
+          0.8864866068260312,
+          0.9999999999999999
+        ]
+      },
+      "false_positive_rate": {
+        "estimate": 0.0,
+        "n": 30,
+        "wilson_95": [
+          0.0,
+          0.11351339317396876
+        ]
+      }
+    },
+    "full": {
+      "attack_success_rate": {
+        "estimate": 0.0,
+        "n": 30,
+        "wilson_95": [
+          0.0,
+          0.11351339317396876
+        ]
+      },
+      "false_positive_rate": {
+        "estimate": 0.0,
+        "n": 30,
+        "wilson_95": [
+          0.0,
+          0.11351339317396876
+        ]
+      }
+    }
+  },
+  "paired_comparisons": {
+    "full_minus_action_target": {
+      "cluster_bootstrap_95": [
+        0.4222222222222223,
+        0.5333333333333333
+      ],
+      "exact_accuracy_difference": 0.47777777777777786,
+      "scenario_all_variants_correct": {
+        "baseline_only": 0,
+        "full_only": 30,
+        "mcnemar_exact_two_sided_p": 1.862645149230957e-09
+      }
+    },
+    "full_minus_base": {
+      "cluster_bootstrap_95": [
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "exact_accuracy_difference": 0.6666666666666667,
+      "scenario_all_variants_correct": {
+        "baseline_only": 0,
+        "full_only": 30,
+        "mcnemar_exact_two_sided_p": 1.862645149230957e-09
+      }
+    }
+  },
+  "statistical_unit": "base_scenario_id"
+}

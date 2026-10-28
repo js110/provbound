@@ -1,0 +1,37 @@
+{
+  "freeze_id": "offline-test-freeze-v1",
+  "frozen_at": "2026-07-18T03:36:04Z",
+  "protocol": {
+    "dataset": "experiments_v3/datasets/base_scenarios.jsonl",
+    "split": "test",
+    "modes": [
+      "base",
+      "action_target",
+      "full"
+    ],
+    "statistical_unit": "base_scenario_id",
+    "test_split_may_guide_implementation": false
+  },
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Darwin 25.5.0 arm64",
+    "version_control": "workspace is not a Git repository; file hashes are authoritative"
+  },
+  "sha256": {
+    "causalguard/guard/authorization.py": "242edc2f70f9c82f420c9930140de728fd05f95c7785e8b7d8cafb5400c8cf08",
+    "causalguard/guard/provenance.py": "fc35749958eda6d0b141998caf921802db62863c5390538c2603ae826a5b1859",
+    "causalguard/guard/disclosure.py": "10266e143fa7fc8549b4a9dd39f2316c9a0a39729511c34f1718af5411000fe7",
+    "causalguard/guard/certificate.py": "e6cf9ae83a9704e5bb3b13c341b766c902becc7bc8ef1884d6a5ccd0cc8cd247",
+    "causalguard/integrations/core_guard.py": "aeff5b8f461d5a56a3bfba6077ca8c0e5a42e3dd68e23fa55209876ffd047806",
+    "experiments_v3/dataset_runner.py": "c886b646d52e7392d2093c7f1b379b84fdc17d42cd0fdc1f48bef629d8a60e2c",
+    "experiments_v3/datasets/base_scenarios.jsonl": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084"
+  },
+  "development_gate": {
+    "test_command": "python3 -m unittest discover -s tests -v",
+    "tests_passed": 77,
+    "tests_failed": 0,
+    "dev_run": "results_v3/frozen_dev_v1/run_manifest.json",
+    "dev_summary_sha256": "32d3eb3574377222a562b111af54150625e2d06a618f1b3fca7d4d024896cfda"
+  },
+  "evidence_boundary": "The custom test split measures deterministic policy decisions over structured gold variants. It does not measure language-model tool selection and cannot establish external validity without the real-agent and AgentDojo experiments."
+}

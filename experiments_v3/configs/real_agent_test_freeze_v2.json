@@ -1,0 +1,80 @@
+{
+  "freeze_id": "real-agent-test-freeze-v2",
+  "frozen_at": "2026-07-19T17:38:00+08:00",
+  "status": "frozen-before-sensenova-test-extension",
+  "supersedes": "real-agent-test-freeze-v1",
+  "supersession_scope": "third_provider_only",
+  "supersession_reason": "The user replaced the unreliable StepFun provider with SenseNova before any StepFun held-out test was run. DeepSeek and MiMo remain governed by v1 and their completed artifacts are immutable.",
+  "preserved_primary_test": {
+    "providers": [
+      "deepseek",
+      "mimo"
+    ],
+    "freeze_v1_sha256": "b7d29ad5dba9342a7701ae279dabbaf7b76a35fe5b7e9294f865443fa524c96d",
+    "deepseek_test_manifest_sha256": "977d447696f5f23edbf5646f98a7fbc8f8f8295b3fb7970a39b271f4992454b9",
+    "mimo_test_manifest_sha256": "a72a081479aacc1dac73c8909ed39819917f7317637d4991a2a361c013dbb5b4",
+    "primary_hypothesis_unchanged": true
+  },
+  "sensenova_extension": {
+    "provider": "sensenova",
+    "model": "sensenova-6.7-flash-lite",
+    "base_url": "https://token.sensenova.cn/v1",
+    "credential_env": "SENSENOVA_API_KEY",
+    "split": "test",
+    "base_scenarios": 30,
+    "variant_kinds": [
+      "benign",
+      "attack"
+    ],
+    "modes": [
+      "base",
+      "full"
+    ],
+    "cells": 120,
+    "one_attempt_per_cell": true,
+    "outcome_driven_reruns_forbidden": true,
+    "role": "frozen third-provider confirmatory extension; reported separately and in a three-provider descriptive pooled analysis"
+  },
+  "protocol": {
+    "agent_protocol_sha256": "e5fea376eeaed59d63e4bf6495a0b40b70a4ba019039a9cb7fa9067c25efa0e0",
+    "temperature": 0,
+    "max_agent_steps": 10,
+    "request_timeout_seconds": 60,
+    "sdk_max_retries": 2,
+    "mode_order": "counterbalanced by SHA-256 parity of base_scenario_id",
+    "test_split_may_guide_implementation": false
+  },
+  "development_gate": {
+    "native_tool_smoke": "results_v3/provider_smoke_sensenova_live_v1/results.json",
+    "native_tool_smoke_sha256": "1c696dd8e4848ab1b32e8452082096e13728d378c58ab17b6005285071743902",
+    "real_agent_smoke_manifest": "results_v3/real_agent_sensenova_smoke_v1/run_manifest.json",
+    "real_agent_smoke_manifest_sha256": "3b4cd5100466bdb4dc142047639f45203b409dc63fef590358c7158c6b79e319",
+    "real_agent_smoke_completed": 12,
+    "real_agent_smoke_failed": 0,
+    "development_manifest": "results_v3/real_agent_dev_sensenova_v1/sensenova/run_manifest.json",
+    "development_manifest_sha256": "b2acb2009a1b5342471836ee9d6b41166d0701fb49a54142c3e87605d63e8e7b",
+    "development_statistics_sha256": "8ed0471b2a1813d4a777bbd0912aee1e95c552b63103637d197fef454b9194f4",
+    "development_completed": 120,
+    "development_failed": 0
+  },
+  "sha256": {
+    "experiments_v3/real_agent_benchmark.py": "68d9c74a6e5b673ab261aec65bf30167e3b310154c21d6855fad955963cab644",
+    "experiments_v3/agents/tool_agent.py": "d61b843ca96a5687463a1b990924dbcc254574bbcd609c630689e674b69ac041",
+    "experiments_v3/runtime_capabilities.py": "b7aa34366732836506f251e5fcbb5e7a090c38f66d78e76eeea2d12b8ca676de",
+    "experiments_v3/providers/__init__.py": "33c3b59d5ebc755554c4a81933c6d909745bf926f21e4f6e400262fb3ba50352",
+    "experiments_v3/providers/base.py": "f7ac17f08b75f980022c5076caa9595db30412014ad0f67dee861815869ca24a",
+    "experiments_v3/providers/deepseek.py": "11f806123537419bea86f83590a9dabce27284365e0643e38c45de3a9a2001ea",
+    "experiments_v3/providers/mimo.py": "2570d90803d3e78f84f88fb65be4e92e5adeda18ee1f0601def4c1061e63e90b",
+    "experiments_v3/providers/sensenova.py": "2ef239aa0e3a89a5bb1aedbb3291e99cc6ffe6b7c6b5a02dc837c378a21915ec",
+    "experiments_v3/merge_real_agent_runs.py": "13a4442e74c0d2cc9983f796b8767ec639978d1242a630f9eb4ec39196177b21",
+    "experiments_v3/validate_real_agent_results.py": "3b20c2934b38add07b191aeedf898d52d915b0464546d78cbbc60dda4a563d53",
+    "experiments_v3/real_agent_statistics.py": "21e34e0b9f1b80a956c8bde26af5879d64da1f2ea79736f4232285ea244f6284",
+    "experiments_v3/provider_health_gate.py": "3442ce6b169976349bcc4dee12a817626384c361779b3f6d5770826f6fda6d80",
+    "experiments_v3/configs/real_agent_protocol_v1.json": "f91b006be7011bb746471e87e7f25b5919466837c5a7f228d823e812398a7b07",
+    "experiments_v3/datasets/base_scenarios.jsonl": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084",
+    "causalguard/guard/capability_registry.py": "e0737ee5c7d3bf2a2f0e78b67cf46dabc3d04ebc168837bef85cb1d4bb0cd550",
+    "causalguard/integrations/core_guard.py": "aeff5b8f461d5a56a3bfba6077ca8c0e5a42e3dd68e23fa55209876ffd047806",
+    "causalguard/integrations/pre_execution.py": "58e4861e4319e948227621678a08f2aa68e63472c23e24ae7831f18500434a65"
+  },
+  "evidence_boundary": "SenseNova is a frozen third-provider extension added before its held-out test. It does not retroactively alter the DeepSeek and MiMo primary hypothesis or their completed artifacts."
+}

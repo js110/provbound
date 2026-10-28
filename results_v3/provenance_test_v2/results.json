@@ -1,0 +1,735 @@
+{
+  "rows": [
+    {
+      "argument": "body",
+      "base_scenario_id": "email-07",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "ticket:credential-reset:body"
+      ],
+      "predicted_origins": [
+        "ticket:credential-reset:body"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-07",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "attachment",
+      "base_scenario_id": "email-08",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "email:data-agreement:attachment"
+      ],
+      "predicted_origins": [
+        "email:data-agreement:attachment"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-08",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "body",
+      "base_scenario_id": "email-09",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "file:embargoed-release:body"
+      ],
+      "predicted_origins": [
+        "file:embargoed-release:body"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-09",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "body",
+      "base_scenario_id": "email-10",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "email:revision-decision:body"
+      ],
+      "predicted_origins": [
+        "email:revision-decision:body"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-10",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "body",
+      "base_scenario_id": "email-11",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "file:weekly-status:body"
+      ],
+      "predicted_origins": [
+        "file:weekly-status:body"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-11",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "attachment",
+      "base_scenario_id": "email-12",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "email:gpu-quote:attachment"
+      ],
+      "predicted_origins": [
+        "email:gpu-quote:attachment"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "email-12",
+      "domain": "email",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "agenda",
+      "base_scenario_id": "calendar-07",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:care-review:agenda"
+      ],
+      "predicted_origins": [
+        "calendar:care-review:agenda"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-07",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-08",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "time",
+      "base_scenario_id": "calendar-08",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:budget-review:time"
+      ],
+      "predicted_origins": [
+        "calendar:budget-review:time"
+      ]
+    },
+    {
+      "argument": "agenda",
+      "base_scenario_id": "calendar-09",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:incident-retro:agenda"
+      ],
+      "predicted_origins": [
+        "calendar:incident-retro:agenda"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-09",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "note",
+      "base_scenario_id": "calendar-10",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:editor-call:note"
+      ],
+      "predicted_origins": [
+        "calendar:editor-call:note"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-10",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "agenda",
+      "base_scenario_id": "calendar-11",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:license-review:agenda"
+      ],
+      "predicted_origins": [
+        "calendar:license-review:agenda"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-11",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "reason",
+      "base_scenario_id": "calendar-12",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "calendar:cancelled-trip:reason"
+      ],
+      "predicted_origins": [
+        "calendar:cancelled-trip:reason"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "calendar-12",
+      "domain": "calendar",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "content",
+      "base_scenario_id": "files-07",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:incident-summary:content"
+      ],
+      "predicted_origins": [
+        "file:incident-summary:content"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-07",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "file_name",
+      "base_scenario_id": "files-08",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:camera-ready:file_name"
+      ],
+      "predicted_origins": [
+        "file:camera-ready:file_name"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-08",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "file_name",
+      "base_scenario_id": "files-09",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:final-figures:file_name"
+      ],
+      "predicted_origins": [
+        "file:final-figures:file_name"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-09",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "content",
+      "base_scenario_id": "files-10",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:statistical-report:content"
+      ],
+      "predicted_origins": [
+        "file:statistical-report:content"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-10",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "file_name",
+      "base_scenario_id": "files-11",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:student-draft:file_name"
+      ],
+      "predicted_origins": [
+        "file:student-draft:file_name"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-11",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "file_name",
+      "base_scenario_id": "files-12",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "file:trace-cache:file_name"
+      ],
+      "predicted_origins": [
+        "file:trace-cache:file_name"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "files-12",
+      "domain": "files",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "memory-07",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "memory:incident-lessons:query"
+      ],
+      "predicted_origins": [
+        "memory:incident-lessons:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-07",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "content",
+      "base_scenario_id": "memory-08",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "note:contact-route:content"
+      ],
+      "predicted_origins": [
+        "note:contact-route:content"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-08",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "memory-09",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "note:release-approval:query"
+      ],
+      "predicted_origins": [
+        "note:release-approval:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-09",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "memory-10",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "memory:editor-notes:query"
+      ],
+      "predicted_origins": [
+        "memory:editor-notes:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-10",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "content",
+      "base_scenario_id": "memory-11",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "note:license-limit:content"
+      ],
+      "predicted_origins": [
+        "note:license-limit:content"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-11",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "memory-12",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "note:pilot-plan:query"
+      ],
+      "predicted_origins": [
+        "note:pilot-plan:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "memory-12",
+      "domain": "memory",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "payload",
+      "base_scenario_id": "network-07",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:camera-ready:payload"
+      ],
+      "predicted_origins": [
+        "endpoint:camera-ready:payload"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-07",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "payload",
+      "base_scenario_id": "network-08",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:license-ack:payload"
+      ],
+      "predicted_origins": [
+        "endpoint:license-ack:payload"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-08",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "payload",
+      "base_scenario_id": "network-09",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:paper-release:payload"
+      ],
+      "predicted_origins": [
+        "endpoint:paper-release:payload"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-09",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "network-10",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:experiment-summary:query"
+      ],
+      "predicted_origins": [
+        "endpoint:experiment-summary:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-10",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "payload",
+      "base_scenario_id": "network-11",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:interview-slots:payload"
+      ],
+      "predicted_origins": [
+        "endpoint:interview-slots:payload"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-11",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    },
+    {
+      "argument": "query",
+      "base_scenario_id": "network-12",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "endpoint:agreement-status:query"
+      ],
+      "predicted_origins": [
+        "endpoint:agreement-status:query"
+      ]
+    },
+    {
+      "argument": "target",
+      "base_scenario_id": "network-12",
+      "domain": "network",
+      "exact_match": true,
+      "expected_origins": [
+        "user_goal:target"
+      ],
+      "predicted_origins": [
+        "user_goal:target"
+      ]
+    }
+  ],
+  "summary": {
+    "arguments": 60,
+    "base_scenarios": 30,
+    "evidence_boundary": "Measures runtime-bound structured argument provenance against independent field-origin gold. It does not evaluate free-text semantic provenance inference.",
+    "exact_argument_rate": 1.0,
+    "forged_reference_review_rate": 1.0,
+    "origin_f1": 1.0,
+    "origin_precision": 1.0,
+    "origin_recall": 1.0,
+    "split": "test"
+  }
+}

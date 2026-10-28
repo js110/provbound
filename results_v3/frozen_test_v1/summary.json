@@ -1,0 +1,32 @@
+{
+  "action_target": {
+    "attack_success_rate": 0.43333333333333335,
+    "block_recall": 0.5666666666666667,
+    "cases": 90,
+    "certificate_validity": 0.0,
+    "exact_accuracy": 0.5222222222222223,
+    "false_positive_rate": 0.0,
+    "review_recall": 0.0,
+    "utility": 1.0
+  },
+  "base": {
+    "attack_success_rate": 1.0,
+    "block_recall": 0.0,
+    "cases": 90,
+    "certificate_validity": 0.0,
+    "exact_accuracy": 0.3333333333333333,
+    "false_positive_rate": 0.0,
+    "review_recall": 0.0,
+    "utility": 1.0
+  },
+  "full": {
+    "attack_success_rate": 0.0,
+    "block_recall": 1.0,
+    "cases": 90,
+    "certificate_validity": 1.0,
+    "exact_accuracy": 1.0,
+    "false_positive_rate": 0.0,
+    "review_recall": 1.0,
+    "utility": 1.0
+  }
+}

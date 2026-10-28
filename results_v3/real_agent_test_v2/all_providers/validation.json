@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "run manifest already claims paper eligibility; validation and statistics must be external"
+  ],
+  "row_count": 360,
+  "trace_count": 360,
+  "retained_failures": 1,
+  "native_tool_call_traces": 360,
+  "model_identity_checked_rows": 360
+}

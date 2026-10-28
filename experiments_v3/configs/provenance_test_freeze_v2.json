@@ -1,0 +1,20 @@
+{
+  "freeze_id": "provenance-test-freeze-v2",
+  "frozen_at": "2026-07-18",
+  "supersedes": "provenance-test-freeze-v1",
+  "supersession_reason": "v1 hashed the still-evolving real-agent runner; v2 isolates the immutable runtime capability compiler without changing benchmark outputs",
+  "split": "test",
+  "statistical_unit": "base_scenario_id",
+  "sha256": {
+    "causalguard/guard/capability_registry.py": "e0737ee5c7d3bf2a2f0e78b67cf46dabc3d04ebc168837bef85cb1d4bb0cd550",
+    "experiments_v3/runtime_capabilities.py": "b7aa34366732836506f251e5fcbb5e7a090c38f66d78e76eeea2d12b8ca676de",
+    "experiments_v3/provenance_benchmark.py": "2666c4f6c9d4d62fac903f650782c1634e2719fbd4007ac7f30e5a4d8eecfe0f",
+    "experiments_v3/datasets/base_scenarios.jsonl": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084"
+  },
+  "development_result": {
+    "path": "results_v3/provenance_dev_v2/results.json",
+    "sha256": "5b5c6d455902bc6dd34b3f1f308d73279c122ce64bdcafb792b3f8ec65743505"
+  },
+  "test_split_may_guide_implementation": false,
+  "evidence_boundary": "Evaluates runtime-bound structured references against field-origin gold, not semantic provenance inference from arbitrary free text."
+}

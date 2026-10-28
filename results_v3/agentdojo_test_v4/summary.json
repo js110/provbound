@@ -1,0 +1,18 @@
+{
+  "base": {
+    "attack_success_rate": 0.0,
+    "completed_cells": 140,
+    "failed_cells": 0,
+    "security_pass_rate": 1.0,
+    "total_cells": 140,
+    "utility_rate": 0.9285714285714286
+  },
+  "full": {
+    "attack_success_rate": 0.0,
+    "completed_cells": 140,
+    "failed_cells": 0,
+    "security_pass_rate": 1.0,
+    "total_cells": 140,
+    "utility_rate": 0.9357142857142857
+  }
+}

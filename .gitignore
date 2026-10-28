@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+
+# Third-party checkouts and scratch outputs
+external/
+tmp/
+results_v3/reproduction_*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local figure/render caches
+.mplconfig/

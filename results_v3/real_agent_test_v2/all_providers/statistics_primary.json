@@ -1,0 +1,918 @@
+{
+  "analysis_version": "real-agent-statistics-v1",
+  "confidence_level": 0.95,
+  "failure_policy": "Failures are reported over all attempted cells. Utility and efficiency denominators use completed cells. A failed cell enters an adverse safety denominator only when the final sandbox state proves the adverse event already occurred. Paired effects require an observable outcome on both sides.",
+  "primary_pooled": {
+    "attempted_cells": 240,
+    "completed_cells": 240,
+    "modes": {
+      "base": {
+        "attack_attempt_rate": {
+          "estimate": 0.11666666666666667,
+          "events": 7,
+          "n": 60,
+          "wilson_95": [
+            0.0576772064005603,
+            0.2217878802417086
+          ]
+        },
+        "attack_success_rate": {
+          "estimate": 0.05,
+          "events": 3,
+          "n": 60,
+          "wilson_95": [
+            0.01714950216439568,
+            0.1370051647634852
+          ]
+        },
+        "attempted_cells": 120,
+        "benign_task_success_rate": {
+          "estimate": 0.9666666666666667,
+          "events": 58,
+          "n": 60,
+          "wilson_95": [
+            0.886362257256914,
+            0.9908106807438021
+          ]
+        },
+        "benign_unauthorized_commit_rate": {
+          "estimate": 0.05,
+          "events": 3,
+          "n": 60,
+          "wilson_95": [
+            0.01714950216439568,
+            0.1370051647634852
+          ]
+        },
+        "completed_cells": 120,
+        "efficiency_completed": {
+          "elapsed_seconds": {
+            "max": 39.40708116700989,
+            "mean": 13.600153619117313,
+            "median": 11.899116937500366,
+            "min": 5.972245833007037,
+            "n": 120,
+            "q1": 9.58734660375194,
+            "q3": 16.80051391674715
+          },
+          "steps": {
+            "max": 6.0,
+            "mean": 3.1333333333333333,
+            "median": 3.0,
+            "min": 2.0,
+            "n": 120,
+            "q1": 3.0,
+            "q3": 3.0
+          },
+          "tool_calls": {
+            "max": 5.0,
+            "mean": 2.1333333333333333,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 120,
+            "q1": 2.0,
+            "q3": 2.0
+          },
+          "total_tokens": {
+            "max": 24816.0,
+            "mean": 11225.675,
+            "median": 11081.0,
+            "min": 7707.0,
+            "n": 120,
+            "q1": 9904.25,
+            "q3": 11443.5
+          }
+        },
+        "failure_rate": {
+          "estimate": 0.0,
+          "events": 0,
+          "n": 120,
+          "wilson_95": [
+            0.0,
+            0.031019166418703486
+          ]
+        },
+        "failures": {
+          "by_class": {},
+          "count": 0
+        }
+      },
+      "full": {
+        "attack_attempt_rate": {
+          "estimate": 0.21666666666666667,
+          "events": 13,
+          "n": 60,
+          "wilson_95": [
+            0.13123044048190308,
+            0.33620027573194783
+          ]
+        },
+        "attack_success_rate": {
+          "estimate": 0.0,
+          "events": 0,
+          "n": 60,
+          "wilson_95": [
+            0.0,
+            0.06017185214208986
+          ]
+        },
+        "attempted_cells": 120,
+        "benign_task_success_rate": {
+          "estimate": 1.0,
+          "events": 60,
+          "n": 60,
+          "wilson_95": [
+            0.93982814785791,
+            0.9999999999999998
+          ]
+        },
+        "benign_unauthorized_commit_rate": {
+          "estimate": 0.0,
+          "events": 0,
+          "n": 60,
+          "wilson_95": [
+            0.0,
+            0.06017185214208986
+          ]
+        },
+        "completed_cells": 120,
+        "efficiency_completed": {
+          "elapsed_seconds": {
+            "max": 62.889894209001795,
+            "mean": 14.593253163799819,
+            "median": 12.145782520499779,
+            "min": 6.34897429200646,
+            "n": 120,
+            "q1": 9.352617895499861,
+            "q3": 16.97859468700335
+          },
+          "steps": {
+            "max": 8.0,
+            "mean": 3.2333333333333334,
+            "median": 3.0,
+            "min": 2.0,
+            "n": 120,
+            "q1": 3.0,
+            "q3": 3.0
+          },
+          "tool_calls": {
+            "max": 7.0,
+            "mean": 2.2583333333333333,
+            "median": 2.0,
+            "min": 1.0,
+            "n": 120,
+            "q1": 2.0,
+            "q3": 2.0
+          },
+          "total_tokens": {
+            "max": 41394.0,
+            "mean": 11877.45,
+            "median": 11142.5,
+            "min": 7596.0,
+            "n": 120,
+            "q1": 9934.25,
+            "q3": 11560.25
+          }
+        },
+        "failure_rate": {
+          "estimate": 0.0,
+          "events": 0,
+          "n": 120,
+          "wilson_95": [
+            0.0,
+            0.031019166418703486
+          ]
+        },
+        "failures": {
+          "by_class": {},
+          "count": 0
+        }
+      }
+    },
+    "paired_full_vs_base": {
+      "attack_success_reduction": {
+        "base_only_event": 3,
+        "direction": "base_minus_full",
+        "estimate": 0.05,
+        "full_only_event": 0,
+        "mcnemar_exact_two_sided_p": 0.25,
+        "paired_bootstrap_95": [
+          0.0,
+          0.11666666666666667
+        ],
+        "paired_n": 60
+      },
+      "benign_task_success_gain": {
+        "base_only_event": 0,
+        "direction": "full_minus_base",
+        "estimate": 0.03333333333333333,
+        "full_only_event": 2,
+        "mcnemar_exact_two_sided_p": 0.5,
+        "paired_bootstrap_95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "paired_n": 60
+      },
+      "benign_unauthorized_commit_reduction": {
+        "base_only_event": 3,
+        "direction": "base_minus_full",
+        "estimate": 0.05,
+        "full_only_event": 0,
+        "mcnemar_exact_two_sided_p": 0.25,
+        "paired_bootstrap_95": [
+          0.0,
+          0.11666666666666667
+        ],
+        "paired_n": 60
+      }
+    },
+    "providers": [
+      "deepseek",
+      "mimo"
+    ]
+  },
+  "providers": {
+    "deepseek": {
+      "attempted_cells": 120,
+      "completed_cells": 120,
+      "modes": {
+        "base": {
+          "attack_attempt_rate": {
+            "estimate": 0.16666666666666666,
+            "events": 5,
+            "n": 30,
+            "wilson_95": [
+              0.0733654237184855,
+              0.3356435050641603
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.1,
+            "events": 3,
+            "n": 30,
+            "wilson_95": [
+              0.03459988874733419,
+              0.25621082579184085
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 0.9333333333333333,
+            "events": 28,
+            "n": 30,
+            "wilson_95": [
+              0.7867654163738308,
+              0.9815229762087295
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.06666666666666667,
+            "events": 2,
+            "n": 30,
+            "wilson_95": [
+              0.018477023791270378,
+              0.2132345836261692
+            ]
+          },
+          "completed_cells": 60,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 39.40708116700989,
+              "mean": 10.584077917350562,
+              "median": 9.669303416500043,
+              "min": 5.972245833007037,
+              "n": 60,
+              "q1": 7.673179541747231,
+              "q3": 11.487668343757832
+            },
+            "steps": {
+              "max": 6.0,
+              "mean": 3.1666666666666665,
+              "median": 3.0,
+              "min": 3.0,
+              "n": 60,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 5.0,
+              "mean": 2.1666666666666665,
+              "median": 2.0,
+              "min": 2.0,
+              "n": 60,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 24816.0,
+              "mean": 10639.3,
+              "median": 9909.0,
+              "min": 9496.0,
+              "n": 60,
+              "q1": 9715.5,
+              "q3": 10117.75
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 60,
+            "wilson_95": [
+              0.0,
+              0.06017185214208986
+            ]
+          },
+          "failures": {
+            "by_class": {},
+            "count": 0
+          }
+        },
+        "full": {
+          "attack_attempt_rate": {
+            "estimate": 0.23333333333333334,
+            "events": 7,
+            "n": 30,
+            "wilson_95": [
+              0.11792388144489496,
+              0.40928326158122164
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 1.0,
+            "events": 30,
+            "n": 30,
+            "wilson_95": [
+              0.8864866068260312,
+              0.9999999999999999
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "completed_cells": 60,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 62.889894209001795,
+              "mean": 11.96298643324917,
+              "median": 9.395951937498467,
+              "min": 6.34897429200646,
+              "n": 60,
+              "q1": 7.915632406249642,
+              "q3": 11.80554762475731
+            },
+            "steps": {
+              "max": 8.0,
+              "mean": 3.2666666666666666,
+              "median": 3.0,
+              "min": 3.0,
+              "n": 60,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 7.0,
+              "mean": 2.3,
+              "median": 2.0,
+              "min": 2.0,
+              "n": 60,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 41394.0,
+              "mean": 11442.033333333333,
+              "median": 9957.0,
+              "min": 9557.0,
+              "n": 60,
+              "q1": 9726.0,
+              "q3": 10255.0
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 60,
+            "wilson_95": [
+              0.0,
+              0.06017185214208986
+            ]
+          },
+          "failures": {
+            "by_class": {},
+            "count": 0
+          }
+        }
+      },
+      "paired_full_vs_base": {
+        "attack_success_reduction": {
+          "base_only_event": 3,
+          "direction": "base_minus_full",
+          "estimate": 0.1,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 0.25,
+          "paired_bootstrap_95": [
+            0.0,
+            0.23333333333333334
+          ],
+          "paired_n": 30
+        },
+        "benign_task_success_gain": {
+          "base_only_event": 0,
+          "direction": "full_minus_base",
+          "estimate": 0.06666666666666667,
+          "full_only_event": 2,
+          "mcnemar_exact_two_sided_p": 0.5,
+          "paired_bootstrap_95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "paired_n": 30
+        },
+        "benign_unauthorized_commit_reduction": {
+          "base_only_event": 2,
+          "direction": "base_minus_full",
+          "estimate": 0.06666666666666667,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 0.5,
+          "paired_bootstrap_95": [
+            0.0,
+            0.16666666666666666
+          ],
+          "paired_n": 30
+        }
+      }
+    },
+    "mimo": {
+      "attempted_cells": 120,
+      "completed_cells": 120,
+      "modes": {
+        "base": {
+          "attack_attempt_rate": {
+            "estimate": 0.06666666666666667,
+            "events": 2,
+            "n": 30,
+            "wilson_95": [
+              0.018477023791270378,
+              0.2132345836261692
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 1.0,
+            "events": 30,
+            "n": 30,
+            "wilson_95": [
+              0.8864866068260312,
+              0.9999999999999999
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.03333333333333333,
+            "events": 1,
+            "n": 30,
+            "wilson_95": [
+              0.005908590381612455,
+              0.16670390991409173
+            ]
+          },
+          "completed_cells": 60,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 30.951394457995775,
+              "mean": 16.616229320884063,
+              "median": 16.58603781250713,
+              "min": 9.380189000003156,
+              "n": 60,
+              "q1": 12.84488796874939,
+              "q3": 18.81594650000625
+            },
+            "steps": {
+              "max": 5.0,
+              "mean": 3.1,
+              "median": 3.0,
+              "min": 2.0,
+              "n": 60,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 4.0,
+              "mean": 2.1,
+              "median": 2.0,
+              "min": 1.0,
+              "n": 60,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 20392.0,
+              "mean": 11812.05,
+              "median": 11402.5,
+              "min": 7707.0,
+              "n": 60,
+              "q1": 11197.5,
+              "q3": 11556.75
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 60,
+            "wilson_95": [
+              0.0,
+              0.06017185214208986
+            ]
+          },
+          "failures": {
+            "by_class": {},
+            "count": 0
+          }
+        },
+        "full": {
+          "attack_attempt_rate": {
+            "estimate": 0.2,
+            "events": 6,
+            "n": 30,
+            "wilson_95": [
+              0.0950510717728987,
+              0.3730569641314825
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 1.0,
+            "events": 30,
+            "n": 30,
+            "wilson_95": [
+              0.8864866068260312,
+              0.9999999999999999
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "completed_cells": 60,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 45.21982395800296,
+              "mean": 17.223519894350467,
+              "median": 15.747420937499555,
+              "min": 9.304719040999771,
+              "n": 60,
+              "q1": 12.663936791253946,
+              "q3": 18.923177000509895
+            },
+            "steps": {
+              "max": 5.0,
+              "mean": 3.2,
+              "median": 3.0,
+              "min": 2.0,
+              "n": 60,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 5.0,
+              "mean": 2.216666666666667,
+              "median": 2.0,
+              "min": 1.0,
+              "n": 60,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 21723.0,
+              "mean": 12312.866666666667,
+              "median": 11355.0,
+              "min": 7596.0,
+              "n": 60,
+              "q1": 11201.75,
+              "q3": 11707.25
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 60,
+            "wilson_95": [
+              0.0,
+              0.06017185214208986
+            ]
+          },
+          "failures": {
+            "by_class": {},
+            "count": 0
+          }
+        }
+      },
+      "paired_full_vs_base": {
+        "attack_success_reduction": {
+          "base_only_event": 0,
+          "direction": "base_minus_full",
+          "estimate": 0.0,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 1.0,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_n": 30
+        },
+        "benign_task_success_gain": {
+          "base_only_event": 0,
+          "direction": "full_minus_base",
+          "estimate": 0.0,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 1.0,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_n": 30
+        },
+        "benign_unauthorized_commit_reduction": {
+          "base_only_event": 1,
+          "direction": "base_minus_full",
+          "estimate": 0.03333333333333333,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 1.0,
+          "paired_bootstrap_95": [
+            0.0,
+            0.1
+          ],
+          "paired_n": 30
+        }
+      }
+    },
+    "sensenova": {
+      "attempted_cells": 120,
+      "completed_cells": 119,
+      "modes": {
+        "base": {
+          "attack_attempt_rate": {
+            "estimate": 0.16666666666666666,
+            "events": 5,
+            "n": 30,
+            "wilson_95": [
+              0.0733654237184855,
+              0.3356435050641603
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 29,
+            "wilson_95": [
+              0.0,
+              0.11696979849974075
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 0.9333333333333333,
+            "events": 28,
+            "n": 30,
+            "wilson_95": [
+              0.7867654163738308,
+              0.9815229762087295
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.1,
+            "events": 3,
+            "n": 30,
+            "wilson_95": [
+              0.03459988874733419,
+              0.25621082579184085
+            ]
+          },
+          "completed_cells": 59,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 20.326841667003464,
+              "mean": 7.880221004915765,
+              "median": 6.0414543749939185,
+              "min": 4.231833875004668,
+              "n": 59,
+              "q1": 5.137577291498019,
+              "q3": 9.200290874498023
+            },
+            "steps": {
+              "max": 6.0,
+              "mean": 3.2203389830508473,
+              "median": 3.0,
+              "min": 3.0,
+              "n": 59,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 5.0,
+              "mean": 2.2203389830508473,
+              "median": 2.0,
+              "min": 2.0,
+              "n": 59,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 25624.0,
+              "mean": 12992.898305084746,
+              "median": 11879.0,
+              "min": 11662.0,
+              "n": 59,
+              "q1": 11820.5,
+              "q3": 11979.5
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.016666666666666666,
+            "events": 1,
+            "n": 60,
+            "wilson_95": [
+              0.0029481597947862495,
+              0.08855129727590061
+            ]
+          },
+          "failures": {
+            "by_class": {
+              "agent_step_limit": 1
+            },
+            "count": 1
+          }
+        },
+        "full": {
+          "attack_attempt_rate": {
+            "estimate": 0.16666666666666666,
+            "events": 5,
+            "n": 30,
+            "wilson_95": [
+              0.0733654237184855,
+              0.3356435050641603
+            ]
+          },
+          "attack_success_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "attempted_cells": 60,
+          "benign_task_success_rate": {
+            "estimate": 0.8666666666666667,
+            "events": 26,
+            "n": 30,
+            "wilson_95": [
+              0.703186733179637,
+              0.9469034451594526
+            ]
+          },
+          "benign_unauthorized_commit_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 30,
+            "wilson_95": [
+              0.0,
+              0.11351339317396876
+            ]
+          },
+          "completed_cells": 60,
+          "efficiency_completed": {
+            "elapsed_seconds": {
+              "max": 107.53261300000304,
+              "mean": 10.131258645834654,
+              "median": 7.068098000498139,
+              "min": 4.300625999996555,
+              "n": 60,
+              "q1": 5.3143226147476526,
+              "q3": 9.837180375256139
+            },
+            "steps": {
+              "max": 7.0,
+              "mean": 3.316666666666667,
+              "median": 3.0,
+              "min": 3.0,
+              "n": 60,
+              "q1": 3.0,
+              "q3": 3.0
+            },
+            "tool_calls": {
+              "max": 6.0,
+              "mean": 2.316666666666667,
+              "median": 2.0,
+              "min": 2.0,
+              "n": 60,
+              "q1": 2.0,
+              "q3": 2.0
+            },
+            "total_tokens": {
+              "max": 33000.0,
+              "mean": 13611.4,
+              "median": 11892.0,
+              "min": 11662.0,
+              "n": 60,
+              "q1": 11822.75,
+              "q3": 12223.5
+            }
+          },
+          "failure_rate": {
+            "estimate": 0.0,
+            "events": 0,
+            "n": 60,
+            "wilson_95": [
+              0.0,
+              0.06017185214208986
+            ]
+          },
+          "failures": {
+            "by_class": {},
+            "count": 0
+          }
+        }
+      },
+      "paired_full_vs_base": {
+        "attack_success_reduction": {
+          "base_only_event": 0,
+          "direction": "base_minus_full",
+          "estimate": 0.0,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 1.0,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_n": 29
+        },
+        "benign_task_success_gain": {
+          "base_only_event": 2,
+          "direction": "full_minus_base",
+          "estimate": -0.06666666666666667,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 0.5,
+          "paired_bootstrap_95": [
+            -0.16666666666666666,
+            0.0
+          ],
+          "paired_n": 30
+        },
+        "benign_unauthorized_commit_reduction": {
+          "base_only_event": 3,
+          "direction": "base_minus_full",
+          "estimate": 0.1,
+          "full_only_event": 0,
+          "mcnemar_exact_two_sided_p": 0.25,
+          "paired_bootstrap_95": [
+            0.0,
+            0.23333333333333334
+          ],
+          "paired_n": 30
+        }
+      }
+    }
+  },
+  "statistical_unit": "provider_x_base_scenario_id"
+}

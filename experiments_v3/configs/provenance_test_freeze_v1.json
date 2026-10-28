@@ -1,0 +1,18 @@
+{
+  "freeze_id": "provenance-test-freeze-v1",
+  "frozen_at": "2026-07-18",
+  "split": "test",
+  "statistical_unit": "base_scenario_id",
+  "sha256": {
+    "causalguard/guard/capability_registry.py": "e0737ee5c7d3bf2a2f0e78b67cf46dabc3d04ebc168837bef85cb1d4bb0cd550",
+    "experiments_v3/real_agent_benchmark.py": "7f142ee5996a9de75d8a34137b9bf7c65469dd6211fe26af7de03f658ac8ffa9",
+    "experiments_v3/provenance_benchmark.py": "8f29503725d743cad5de6188a8a50e0f1323e44b2757e632097b459c4484d6e5",
+    "experiments_v3/datasets/base_scenarios.jsonl": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084"
+  },
+  "development_result": {
+    "path": "results_v3/provenance_dev_v1/results.json",
+    "sha256": "5b5c6d455902bc6dd34b3f1f308d73279c122ce64bdcafb792b3f8ec65743505"
+  },
+  "test_split_may_guide_implementation": false,
+  "evidence_boundary": "Evaluates runtime-bound structured references against field-origin gold, not semantic provenance inference from arbitrary free text."
+}

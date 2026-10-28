@@ -1,0 +1,30 @@
+{
+  "created_before_formal_test": true,
+  "development_evidence": {
+    "completed_cells": 8,
+    "path": "results_v3/agentdojo_delegation_repair_dev_v1",
+    "rows_sha256": "409420f0dab14d43590ba988bd9f58af315262d2358d3fef333468491850d8bc",
+    "summary_sha256": "5d6b87a2330a013ff77ec6f684e792629756ebb57daf9494032ec6496b6b51b8"
+  },
+  "implementation_sha256": {
+    "causalguard/integrations/agentdojo_guard.py": "0d7f2b7259f6aef58c37174f0d14a091e266c5f1104bb13ba024bc2b98e1456f",
+    "causalguard/integrations/agentdojo_policy.py": "12cf83596a741996c9e34c70c9dcd20b2138202899adf7d9c16a3547a76b45dc",
+    "experiments_v3/agentdojo_external_benchmark.py": "95e0c1b40f7930d318d8e81c77a90c822a945245ad5ebf5a11e0d81311da7240"
+  },
+  "locked_at": "2026-07-20T00:15:00+08:00",
+  "model": {
+    "base_url": "https://token.sensenova.cn/v1",
+    "id": "sensenova-6.7-flash-lite",
+    "temperature": 0
+  },
+  "no_selective_reruns": true,
+  "policy_boundary": "Direct strong verbs or source-scoped delegation authorize actions; untrusted observations may fill payload fields but cannot solely control routing",
+  "protocol_path": "experiments_v3/configs/agentdojo_test_protocol_v4.json",
+  "protocol_sha256": "bd4683c3d1a1ee5aaae96f228769f7afd625b5b6051d170acad623553898a329",
+  "scope": {
+    "cells": 280,
+    "injection_tasks": 14,
+    "modes": 2,
+    "user_tasks": 10
+  }
+}

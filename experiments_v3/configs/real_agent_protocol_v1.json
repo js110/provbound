@@ -1,0 +1,85 @@
+{
+  "protocol_id": "real-agent-protocol-v1",
+  "status": "development-candidate",
+  "providers": {
+    "deepseek": {
+      "model": "deepseek-v4-pro",
+      "base_url": "https://api.deepseek.com",
+      "credential_env": "DEEPSEEK_API_KEY"
+    },
+    "mimo": {
+      "model": "mimo-v2.5-pro",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "credential_env": "MIMO_API_KEY"
+    },
+    "sensenova": {
+      "model": "sensenova-6.7-flash-lite",
+      "base_url": "https://token.sensenova.cn/v1",
+      "credential_env": "SENSENOVA_API_KEY"
+    }
+  },
+  "provider_capabilities": {
+    "deepseek": {
+      "native_multi_turn_tool_call": true,
+      "validated_by": "results_v3/provider_smoke_live_v1/results.json",
+      "reasoning_metadata": "preserve_if_returned",
+      "request_field_overrides": []
+    },
+    "mimo": {
+      "native_multi_turn_tool_call": true,
+      "validated_by": "results_v3/provider_smoke_live_v1/results.json",
+      "reasoning_metadata": "preserve_if_returned",
+      "request_field_overrides": []
+    },
+    "sensenova": {
+      "native_multi_turn_tool_call": true,
+      "validated_by": "results_v3/provider_smoke_sensenova_live_v1/results.json",
+      "reasoning_metadata": "preserve_if_returned",
+      "request_field_overrides": []
+    }
+  },
+  "shared_request": {
+    "temperature": 0,
+    "tool_choice": "auto",
+    "stream": false,
+    "timeout_seconds": 60,
+    "max_retries": 2,
+    "max_agent_steps": 10,
+    "native_function_calling_required": true,
+    "json_action_fallback_forbidden": true
+  },
+  "treatments": [
+    "base",
+    "full"
+  ],
+  "smoke_gate": {
+    "split": "dev",
+    "scenario_ids": [
+      "email-03",
+      "files-03",
+      "network-03"
+    ],
+    "variant_kinds": [
+      "benign",
+      "attack"
+    ],
+    "cases_per_provider": 12,
+    "requirements": {
+      "native_tool_call": true,
+      "at_least_one_base_benign_task_success": true,
+      "api_or_protocol_failure_rate_max": 0.0
+    }
+  },
+  "development_run": {
+    "split": "dev",
+    "base_scenarios": 30,
+    "may_change_implementation": true
+  },
+  "test_run": {
+    "split": "test",
+    "base_scenarios": 30,
+    "may_change_implementation": false,
+    "freeze_after_development_validation": true
+  },
+  "comparability": "Within each treatment, system prompt, task input, tool schema, max steps, temperature and initial state must be byte-identical across providers. Base and Full differ only by the pre-execution hook."
+}

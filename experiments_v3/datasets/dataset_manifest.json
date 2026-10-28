@@ -1,0 +1,29 @@
+{
+  "dataset_id": "causalguard-privacy-auth-v3-base-20260718",
+  "status": "frozen",
+  "frozen_at": "2026-07-18",
+  "base_scenarios": 60,
+  "paired_variants": 180,
+  "domains": {
+    "email": 12,
+    "calendar": 12,
+    "files": 12,
+    "memory": 12,
+    "network": 12
+  },
+  "splits": {
+    "dev": 30,
+    "test": 30
+  },
+  "attack_families": 10,
+  "files": {
+    "base_scenarios.jsonl": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084",
+    "schema.json": "c678629286b24f22a52c5f492de71bd591e131467ad773f45c542646cab9aa09",
+    "author_scenarios.py": "cf35c2cbb98c845d69950130c7ded7b526376dbec5e78969130ec1b41f04a149"
+  },
+  "evaluation_protocol": {
+    "development": "Only the dev split may guide implementation fixes.",
+    "test": "Run the test split after the core guard and runner configuration are frozen.",
+    "paper_boundary": "Custom benchmark results must be reported alongside AgentDojo; they cannot alone establish external validity."
+  }
+}

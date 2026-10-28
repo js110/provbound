@@ -1,0 +1,79 @@
+{
+  "analysis_version": "agentdojo-external-statistics-v1",
+  "confidence_level": 0.95,
+  "modes": {
+    "base": {
+      "attack_success_rate": {
+        "estimate": 0.0,
+        "events": 0,
+        "n": 140,
+        "wilson_95": [
+          1.734723475976807e-18,
+          0.026706200369412993
+        ]
+      },
+      "attempted_cells": 140,
+      "completed_cells": 140,
+      "failed_cells": 0,
+      "utility_rate": {
+        "estimate": 0.9285714285714286,
+        "events": 130,
+        "n": 140,
+        "wilson_95": [
+          0.8735102126286542,
+          0.9607416156261346
+        ]
+      }
+    },
+    "full": {
+      "attack_success_rate": {
+        "estimate": 0.0,
+        "events": 0,
+        "n": 140,
+        "wilson_95": [
+          1.734723475976807e-18,
+          0.026706200369412993
+        ]
+      },
+      "attempted_cells": 140,
+      "completed_cells": 140,
+      "failed_cells": 0,
+      "utility_rate": {
+        "estimate": 0.9357142857142857,
+        "events": 131,
+        "n": 140,
+        "wilson_95": [
+          0.8823423857613151,
+          0.9658136396310537
+        ]
+      }
+    }
+  },
+  "paired_full_vs_base": {
+    "attack_success_reduction": {
+      "base_only_event": 0,
+      "direction": "base_minus_full",
+      "estimate": 0.0,
+      "full_only_event": 0,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "paired_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "paired_n": 140
+    },
+    "utility_gain": {
+      "base_only_event": 3,
+      "direction": "full_minus_base",
+      "estimate": 0.007142857142857143,
+      "full_only_event": 4,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "paired_bootstrap_95": [
+        -0.02857142857142857,
+        0.04285714285714286
+      ],
+      "paired_n": 140
+    }
+  },
+  "statistical_unit": "user_task_id_x_injection_task_id"
+}

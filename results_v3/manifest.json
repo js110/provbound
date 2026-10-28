@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-07-18",
+  "scope": "Formal evidence only. Development, pilot, smoke, superseded and failure-diagnostic runs are excluded from this public artifact; their historical manifest entries remain in the authors' archive.",
+  "runs": [
+    {
+      "run_id": "offline-frozen-test-v1",
+      "kind": "frozen_custom_authorization_benchmark",
+      "path": "frozen_test_v1/run_manifest.json",
+      "dataset_sha256": "8bcfd11ee662bd0fd54555a0d28a3dd24d82089985ce66ad4765b3099dd9a084",
+      "configuration": "../experiments_v3/configs/offline_test_freeze.json",
+      "rows_sha256": "b64e5c15f66fd020dda8c9392a50906f5cb004a4320f92be85dcfad4647efcaa",
+      "summary_sha256": "0c6bb2424310d09c4848f842512bb8c984acada32fc8745885f8617cc94c9a0c",
+      "statistics_manifest": "frozen_test_v1/statistics_manifest.json",
+      "statistics_sha256": "84a2c60acb041c2ebf7dedb762a42526d3bf735fc51736b44e155de47d58f203",
+      "paper_evidence_eligible": true,
+      "evidence_boundary": "Deterministic structured-policy benchmark only; real-agent and AgentDojo evidence are still required."
+    },
+    {
+      "run_id": "provenance-test-v2",
+      "kind": "runtime_bound_provenance_benchmark",
+      "path": "provenance_test_v2/results.json",
+      "configuration": "../experiments_v3/configs/provenance_test_freeze_v2.json",
+      "configuration_sha256": "2c12ea5f79b7b20d916fd0a56b0359f31a8c988918e8fb0ceda277bf0aa4d7da",
+      "output_sha256": "ee08be4a4f497fe537e6c0a268d2f5c8c392aa549368de1bec899cdadad106dd",
+      "paper_evidence_eligible": true,
+      "evidence_boundary": "Structured runtime-bound references only; does not establish free-text semantic provenance inference."
+    },
+    {
+      "run_id": "real-agent-test-v2-all-providers",
+      "kind": "same_agent_three_provider_stateful_tool_benchmark",
+      "path": "real_agent_test_v2/all_providers/run_manifest.json",
+      "manifest_sha256": "c47301fc8261728bb233814f30fd9125472326278bac6fadc6de169848f2138c",
+      "configuration": "../experiments_v3/configs/real_agent_test_freeze_v2.json",
+      "primary_statistics": "real_agent_test_v2/all_providers/statistics_primary.json",
+      "descriptive_statistics": "real_agent_test_v2/all_providers/statistics_three_provider.json",
+      "paper_evidence_eligible": true,
+      "validation_status": "passed_with_one_reported_step_limit_failure",
+      "evidence_boundary": "DeepSeek and MiMo form the preregistered primary analysis. SenseNova is a frozen third-provider extension; all-three pooled results are descriptive. One failed Base cell is retained and reported, not counted as a safety success."
+    },
+    {
+      "run_id": "agentdojo-test-v4",
+      "kind": "official_agentdojo_query_scoped_precommit_benchmark",
+      "path": "agentdojo_test_v4/manifest.json",
+      "manifest_sha256": "b4d6d971ca6e4108410828e1b659f043dafe07881c5335817452b3022e2947b4",
+      "configuration": "../experiments_v3/configs/agentdojo_test_freeze_v4.json",
+      "paper_evidence_eligible": true,
+      "validation_status": "passed",
+      "evidence_boundary": "Official AgentDojo v1.2.2 workspace/direct held-out partition. The compatibility adapter evaluates query-scoped precommit constraints, not the complete eight-dimensional capability-reference runtime."
+    }
+  ]
+}

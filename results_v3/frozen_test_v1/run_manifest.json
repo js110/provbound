@@ -1,0 +1,20 @@
+{
+  "base_scenario_count": 30,
+  "canonical_dataset_sha256": "8776f0bdcc5b272abc2238faae37f8da14fe60ea2771b946f281b4311ddc2f3c",
+  "created_at": "2026-07-18T03:37:04.929349+00:00",
+  "evidence_boundary": "This run evaluates the deterministic policy against structured gold. It does not measure whether a language model produced the correct tool call.",
+  "kind": "frozen_custom_authorization_benchmark",
+  "modes": [
+    "action_target",
+    "base",
+    "full"
+  ],
+  "outputs": [
+    "rows.csv",
+    "summary.json"
+  ],
+  "paper_evidence_eligible": true,
+  "run_id": "offline-frozen-test-v1",
+  "split": "test",
+  "variant_count": 90
+}
